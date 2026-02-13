@@ -1,156 +1,156 @@
 # 📊 Data Science Salaries Analysis
 
-## 📋 Descrizione del Progetto
+## 📋 Project Description
 
-Analisi di un dataset di **3.755 stipendi** nel campo della Data Science, coprendo gli anni **2020-2023**.
-L'obiettivo è rispondere a 6 domande chiave sul mercato del lavoro dei dati, con particolare attenzione all'impatto della pandemia COVID-19.
+Analysis of a dataset containing **3,755 salaries** in the field of Data Science, covering the years **2020-2023**.
+The goal is to answer 6 key questions about the data job market, with a focus on the impact of the COVID-19 pandemic.
 
-## 🎯 Domande di Ricerca
+## 🎯 Research Questions
 
-1. **Esiste una correlazione tra livello di esperienza e stipendio?**
-2. **Ci sono differenze salariali tra aziende di diverse dimensioni?**
-3. **Come si distribuiscono geograficamente i professionisti dei dati?**
-4. **Qual è stata la crescita dei professionisti dei dati negli ultimi 4 anni?**
-5. **C'è una correlazione tra l'inizio della pandemia e l'aumento dei professionisti?**
-6. **Quali sono i professionisti più pagati nel settore?**
+1. **Is there a correlation between experience level and salary?**
+2. **Are there salary differences between companies of different sizes?**
+3. **How are data professionals geographically distributed?**
+4. **What has been the growth of data professionals over the last 4 years?**
+5. **Is there a correlation between the pandemic onset and the increase in professionals?**
+6. **Which are the highest-paid roles in the sector?**
 
-## 🛠️ Tecnologie Utilizzate
+## 🛠️ Technologies Used
 
 * **Python 3.13**
-* **Pandas** - Manipolazione e analisi dati
-* **NumPy** - Calcoli numerici
-* **Matplotlib** - Visualizzazioni base
-* **Seaborn** - Visualizzazioni statistiche avanzate
-* **SciPy** - Test statistici (ANOVA, t-test)
+* **Pandas** - Data manipulation and analysis
+* **NumPy** - Numerical computations
+* **Matplotlib** - Basic visualizations
+* **Seaborn** - Advanced statistical visualizations
+* **SciPy** - Statistical tests (ANOVA, t-test)
 
-## 📁 Struttura del Progetto
+## 📁 Project Structure
 
 ```
-Data-Cleaning.ipynb          # Notebook principale con analisi completa
+Data-Cleaning.ipynb          # Main notebook with full analysis
 data/
-└── ds_salaries.csv          # Dataset originale
-README.md                    # Documentazione del progetto
+└── ds_salaries.csv          # Original dataset
+README.md                    # Project documentation
 ```
 
-## 🔍 Analisi Eseguita
+## 🔍 Analysis Steps
 
 ### 1. Data Cleaning & Preprocessing
 
-* Conversione dei codici dei livelli di esperienza (SE → Senior-Level, MI → Mid-Level, EN → Entry-Level, EX → Executive-Level)
-* Conversione dei tipi di impiego (FT → Full-Time, CT → Contract, FL → Freelance, PT → Part-Time)
-* Conversione delle dimensioni aziendali (L → Large, M → Medium, S → Small)
-* Impostazione dell'ordine categorico per le variabili ordinali
+* Converted experience level codes (SE → Senior-Level, MI → Mid-Level, EN → Entry-Level, EX → Executive-Level)
+* Converted employment types (FT → Full-Time, CT → Contract, FL → Freelance, PT → Part-Time)
+* Converted company sizes (L → Large, M → Medium, S → Small)
+* Set ordinal order for categorical variables
 
-### 2. Analisi Statistiche
+### 2. Statistical Analysis
 
-* **ANOVA** per confrontare le medie tra gruppi
-* **T-test** per confronti a coppie
-* **Statistiche descrittive** (media, mediana, deviazione standard)
-* **Calcolo CAGR** (Compound Annual Growth Rate)
+* **ANOVA** to compare group means
+* **T-tests** for pairwise comparisons
+* **Descriptive statistics** (mean, median, standard deviation)
+* **CAGR calculation** (Compound Annual Growth Rate)
 
-### 3. Visualizzazioni
+### 3. Visualizations
 
-* Boxplot per distribuzioni salariali
-* Bar chart per confronti categorici
-* Time series per trend temporali
-* Heatmap per correlazioni geografiche
+* Boxplots for salary distributions
+* Bar charts for categorical comparisons
+* Time series for trend analysis
+* Heatmaps for geographic correlations
 
-## 📊 Risultati Principali
+## 📊 Key Findings
 
-### 📈 Crescita del Settore
+### 📈 Sector Growth
 
-* **2020**: 76 posizioni
-* **2023**: 1.785 posizioni
-* **Crescita totale**: +2.249%
+* **2020**: 76 positions
+* **2023**: 1,785 positions
+* **Total growth**: +2,249%
 * **CAGR**: +186.4%
 
-### 💰 Stipendi per Esperienza
+### 💰 Salaries by Experience
 
-| Livello         | Stipendio Medio | Premium vs Entry-Level |
-| --------------- | --------------- | ---------------------- |
-| Entry-Level     | $78.546         | -                      |
-| Mid-Level       | $104.526        | +33%                   |
-| Senior-Level    | $153.051        | +95%                   |
-| Executive-Level | $194.931        | +148%                  |
+| Level           | Average Salary | Premium vs Entry-Level |
+| --------------- | -------------- | ---------------------- |
+| Entry-Level     | $78,546        | -                      |
+| Mid-Level       | $104,526       | +33%                   |
+| Senior-Level    | $153,051       | +95%                   |
+| Executive-Level | $194,931       | +148%                  |
 
-### 🏢 Stipendi per Dimensione Aziendale
+### 🏢 Salaries by Company Size
 
-| Dimensione | Stipendio Medio | Premium vs Small |
-| ---------- | --------------- | ---------------- |
-| Small      | $78.227         | -                |
-| Medium     | $143.131        | +83%             |
-| Large      | $118.301        | +51%             |
+| Size   | Average Salary | Premium vs Small |
+| ------ | -------------- | ---------------- |
+| Small  | $78,227        | -                |
+| Medium | $143,131       | +83%             |
+| Large  | $118,301       | +51%             |
 
-### 🌍 Distribuzione Geografica
+### 🌍 Geographic Distribution
 
-* **USA**: 81% delle posizioni (3.040)
+* **USA**: 81% of positions (3,040)
 * **UK**: 4.6% (172)
 * **Canada**: 2.3% (87)
-* **Spagna**: 2.1% (77)
+* **Spain**: 2.1% (77)
 
-### 🦠 Impatto Pandemia
+### 🦠 Pandemic Impact
 
-* **Crescita post-pandemia**: +4.741%
-* **Stipendio pre-pandemia**: $92.303
-* **Stipendio pandemia**: $138.506
-* **Incremento salariale**: +50.1%
+* **Post-pandemic growth**: +4,741%
+* **Pre-pandemic salary**: $92,303
+* **During pandemic salary**: $138,506
+* **Salary increase**: +50.1%
 
-### 🏆 Ruoli Più Pagati
+### 🏆 Highest-Paid Roles
 
-| Ruolo                              | Stipendio Medio |
-| ---------------------------------- | --------------- |
-| Principal Data Scientist           | $198.171        |
-| Director of Data Science           | $195.141        |
-| Machine Learning Software Engineer | $192.420        |
-| Data Science Manager               | $191.279        |
-| Applied Scientist                  | $190.264        |
+| Role                               | Average Salary |
+| ---------------------------------- | -------------- |
+| Principal Data Scientist           | $198,171       |
+| Director of Data Science           | $195,141       |
+| Machine Learning Software Engineer | $192,420       |
+| Data Science Manager               | $191,279       |
+| Applied Scientist                  | $190,264       |
 
-## 📈 Test Statistici
+## 📈 Statistical Tests
 
-### ANOVA - Esperienza vs Stipendio
+### ANOVA - Experience vs Salary
 
 * **F-statistic**: 245.67
 * **p-value**: < 0.001
-* **Conclusione**: Correlazione statisticamente significativa
+* **Conclusion**: Statistically significant correlation
 
-### ANOVA - Dimensione Azienda vs Stipendio
+### ANOVA - Company Size vs Salary
 
 * **F-statistic**: 89.23
 * **p-value**: < 0.001
-* **Conclusione**: Differenze significative tra dimensioni
+* **Conclusion**: Significant differences between company sizes
 
 ## 💡 Key Takeaways
 
-1. **L'esperienza paga**: I Senior-Level guadagnano il doppio degli Entry-Level
-2. **Le medie aziende pagano meglio**: Contrariamente all'aspettativa, le aziende medie pagano più delle grandi
-3. **USA domina il mercato**: L'81% delle posizioni sono negli Stati Uniti
-4. **Boom pandemico**: Crescita esplosiva (+623% nel 2022) post-pandemia
-5. **Specializzazione richiesta**: Ruoli di machine learning e data science leadership sono i più pagati
+1. **Experience matters**: Senior-Level earn twice as much as Entry-Level
+2. **Medium companies pay more**: Surprisingly, medium-sized companies pay more than large ones
+3. **USA dominates the market**: 81% of positions are in the United States
+4. **Pandemic boom**: Explosive growth (+623% in 2022) post-pandemic
+5. **Specialization is rewarded**: Machine learning and data science leadership roles are the highest-paid
 
-## 🚀 Come Eseguire
+## 🚀 How to Run
 
 ```bash
-# Clona il repository
+# Clone the repository
 git clone https://github.com/MatheusSabaudo/Cleaning-DataScientists-Salary.git
 
-# Installa le dipendenze
+# Install dependencies
 pip install pandas numpy matplotlib seaborn scipy
 
-# Apri il notebook
+# Open the notebook
 jupyter notebook Data-Cleaning.ipynb
 ```
 
-## 📝 Note
+## 📝 Notes
 
-* Il dataset include solo posizioni con stipendio in USD convertito
-* I test statistici sono stati eseguiti con α = 0.05
-* Per affidabilità statistica, sono state considerate solo posizioni con ≥ 5 occorrenze per l'analisi dei ruoli
+* Dataset includes only positions with salaries converted to USD
+* Statistical tests performed with α = 0.05
+* Only roles with ≥ 5 occurrences were considered for reliability
 
-## 📚 Fonti
+## 📚 Sources
 
-* Dataset: [Data Science Salaries su Kaggle](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)
-* Anni coperti: 2020-2023
+* Dataset: [Data Science Salaries on Kaggle](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)
+* Years covered: 2020-2023
 
-## ✨ Autore
+## ✨ Author
 
-Matheus Sabaudo Rodrigues - Analisi dati completa con focus su trend di mercato e impatto pandemia
+[Matheus Sabaudo Rodrigues] - Full data analysis with focus on market trends and pandemic impact
